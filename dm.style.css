@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* header  */
+header{
+    width: 100%;
+    padding: 0.9% 0;
+    position: fixed;
+    z-index: 3;
+    background: white;
+    border-bottom: 1px solid lightslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header {
+    width: 80%;
+    height: fit-content;
+    /* border-bottom: 1px solid lightslategrey; */
+    display: flex;
+    justify-content: space-evenly;
+}   
+.header .logo {
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+}
+.header .search-box button{
+    padding: 0 70px;
+}
+.header .search-box button img{
+    width: 24px;
+}
+.header .buttons button {
+    border: none;
+    margin: 0 9px;
+}
+.header .buttons button img {
+    width: 28px;
+}
+
+/* main body  */
+.body .main-box {
+    margin-top: 118px;
+    width: 64%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkgray;
+    position: relative;
+}
+.body .main-box .left-box {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border-right: 1px solid darkgray;
+}
+.body .main-box .left-box .top {
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+.body .main-box .left-box .top .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .main-box .left-box .top .user button {
+    border: none;
+    background: none;
+    margin: 0 8px;
+}
+.body .main-box .left-box .top .user button a {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+    font-family: -webkit-pictograph;
+    color: black;
+}
+.body .main-box .left-box .top .user button  a img {
+    width: 16px;
+}
+.body .main-box .left-box .top .edit button {
+    border: none;
+}
+.body .main-box .left-box .top .edit button a img {
+    width: 32px;
+}
+.body .main-box .left-box .catogory {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.body .main-box .left-box .catogory button {
+    margin: 0 9px;
+    background: no-repeat;
+    border: none;
+    border-bottom: .3px solid black;
+}
+.body .main-box .left-box .catogory button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.body .main-box .left-box .persons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    justify-content: flex-start;
+    align-items: center;
+}
+.body .main-box .left-box .persons .profiles {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    padding: 3px 0 3px 0;
+}
+.body .main-box .left-box .persons .profiles .img {
+    width: 50px;
+    height: 52px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+.body .main-box .left-box .persons .profiles .img button {
+    border: 2px solid red;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+}
+.body .main-box .left-box .persons .profiles .img button a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.body .main-box .left-box .persons .profiles .username  {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+.body .main-box .left-box .persons .profiles .username p {
+    color: darkgray;
+    font-size: 14px;
+}
+.body .main-box .right-box {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.body .main-box .right-box .dm-logo {
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 18%;
+    height: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .main-box .right-box .dm-logo img {
+    border-radius: 100%;
+    width: 58%;
+}
+.body .main-box .right-box .some-text {
+    text-align: center;
+    width: 80%;
+    font-size: 24px;
+    color: black;
+    padding: 8px 0;
+}
+.body .main-box .right-box .some-text p {
+    font-size: medium;
+    color: darkgray;
+}
+.body .main-box .right-box .send-button button {
+    border: none;
+    background: cornflowerblue;
+    padding: 3px;
+    border-radius: 3px;
+}
+.body .main-box .right-box .send-button button a{
+    color: white;
+    font-size: small;
+    font-weight: 600;
+    text-decoration: none;
+}
+.body .main-box #notifi.notification {
+    width: 39%;
+    height: 48%;
+    z-index: 1;
+    position: fixed;
+    background: honeydew;
+    top: 8%;
+    right: 16%;
+    border: .5px solid darkgray;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    padding: 8px 0;
+}
+.body .main-box #notifi.notification .day {
+    text-align: start;
+    width: 95%;
+    color: black;
+    font-weight: 900;
+    font-size: 13px;
+    font-family: -webkit-pictograph;
+}
+.body .main-box #notifi.notification .notification-details {
+    width: 95%;
+    padding: 6px 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .main-box #notifi.notification .notification-details .account-details {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.body .main-box #notifi.notification .notification-details .account-details .img-texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 75%;
+}
+.body .main-box #notifi.notification .notification-details .account-details .img-texts .profile-img {
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    margin-right: 3px;
+}
+.body .main-box #notifi.notification .notification-details .account-details .img-texts .profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.body .main-box #notifi.notification .notification-details .like-comments-etc-posts {
+    width: 15%;
+    height: 100%;
+}
+.body .main-box #notifi.notification .notification-details .like-comments-etc-posts img {
+    width: 100%;
+    height: 100%;
+} 
